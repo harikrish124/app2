@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Future<void> fetchUser() async {
     print("fetchuser called");
     // const url = "https://randomuser.me/api/?results=100";
-    // final uri = Uri.parse(url);
+
     final response =
         await http.get(Uri.parse("https://randomuser.me/api/?results=100"));
     //final response = await http.get(uri);
